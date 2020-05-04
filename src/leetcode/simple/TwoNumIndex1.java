@@ -1,9 +1,10 @@
-package test;
+package leetcode.simple;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Demo1 {
+//todo Hasmap新知识点与新的解法
+public class TwoNumIndex1 {
     public int[] twoSum(int[] nums, int target) {
         if(nums.length <=1){
             return new int[2];
@@ -27,7 +28,7 @@ public class Demo1 {
 
 
     public static void main(String[] args) {
-        Demo1 a = new Demo1();
+        TwoNumIndex1 a = new TwoNumIndex1();
         int []nums={2,5,8,10};
         int target = 10;
         int[] twoSum = a.twoSum(nums, target);
