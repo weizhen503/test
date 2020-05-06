@@ -73,4 +73,21 @@ public class IntegerConvert7 {
 }
 
 
-
+/**
+ * int solution(int x){
+ *         int answer = 0;
+ *         while(x != 0 ){
+ *             int y = x % 10;
+ *             x = x / 10;
+ *
+ *             if(answer > Integer.MAX_VALUE / 10){
+ *                 return 0;
+ *             }
+ *             if(answer < Integer.MIN_VALUE / 10){
+ *                 return 0;
+ *             }
+ *             answer = answer * 10 + y;
+ *         }
+ *         return answer;
+ *     }
+ */

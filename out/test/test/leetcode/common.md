@@ -32,27 +32,14 @@
                 str += arr[i];）
  +  再将字符串str转化为整数answer  
      answer = Integer.valueOf(str);
- +  最后判断answer是否溢出或是否为负数（此时这里的answer是最终的反转数，如果反转数溢出，try里的语句就会报错   
-  
+ +  最后判断answer是否溢出或是否为负数  
  try{  
            answer = Integer.valueOf(str);
           }catch(Exception e)  {
               return 0;
           }  
  ###新的解法：
- +  用while循环取余乘十加余数  
-    int y = x % 10; x = x / 10;  
- +  值得注意的是 整数反转后是否溢出的问题  
-   要特别注意当取到最大数和最小数之前的反转数是否大于（最大数/10）或是否小于（最小数/10） 
-    if(answer > Integer.MAX_VALUE / 10){
-                   return 0;
-               }  
-               if(answer < Integer.MIN_VALUE / 10){
-                   return 0;
-               }  
-               answer = answer * 10 + y;  //放在if语句后面是为了检验是否会溢出  
-               
-    
+ +  
  
  
  
