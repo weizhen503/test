@@ -2,6 +2,9 @@ package test;
 
 import com.sun.javaws.IconUtil;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Demo {
 
     public static void main(String[] args) {
@@ -32,6 +35,8 @@ public class Demo {
                 System.out.print(arr[i]);
             }
         }
+
+        List<String> arrayList= new ArrayList<>();
 
         return 0;
     }
