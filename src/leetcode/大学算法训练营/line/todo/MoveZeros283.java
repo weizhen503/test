@@ -1,6 +1,6 @@
-package leetcode.大学算法训练营.line;
+package leetcode.大学算法训练营.line.todo;
 
-public class MoveZeros {
+public class MoveZeros283 {
     public static void main(String[] args) {
 
     }

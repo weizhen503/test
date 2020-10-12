@@ -1,10 +1,10 @@
-package leetcode.大学算法训练营.line;
+package leetcode.大学算法训练营.line.todo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ThreeSum {
+public class ThreeSum15 {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();
