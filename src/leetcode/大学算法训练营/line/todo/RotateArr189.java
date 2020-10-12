@@ -5,4 +5,11 @@ package leetcode.大学算法训练营.line.todo;
  * @version:1.0
  */
 public class RotateArr189 {
+    public void rotate(int[] nums, int k) {
+
+    }
+
+    public static void main(String[] args) {
+        
+    }
 }
