@@ -1,5 +1,8 @@
 package leetcode.大学算法训练营.line.todo;
 
+/**
+ * 资料：https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/jie-yu-shui
+ */
 public class MaxArea11 {
 
     public int maxArea(int[] height) {

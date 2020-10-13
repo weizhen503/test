@@ -1,6 +1,7 @@
 package leetcode.大学算法训练营.line.todo;
 
 /**
+ * 资料：https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/twosum-wen-ti-de-he-xin-si-xiang
  * @date:2020/10/13 7:37
  * @version:1.0
  */
