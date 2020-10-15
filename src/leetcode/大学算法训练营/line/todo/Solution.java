@@ -5,32 +5,24 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> res = new ArrayList<>();
-        for (int k = 0; k < nums.length - 2; k++) {
-            if (nums[k] > 0) {
-                break;
-            }
-            if (k > 0 && nums[k] == nums[k - 1]) {
-                continue;
-            }
-            int i = k + 1;
-            int j = nums.length - 1;
-            while (i < j) {
-                int sum = nums[k] + nums[i] + nums[j];
-                if (sum < 0) {
-                    while (i < j && nums[i] == nums[++i]) ;
-                } else if (sum > 0) {
-                    while (i < j && nums[j] == nums[--j]) ;
-                } else {
-                    res.add(new ArrayList<Integer>(Arrays.asList(nums[k], nums[i], nums[j])));
-                    while (i < j && nums[i] == nums[++i]) ;
-                    while (i < j && nums[j] == nums[--j]) ;
-                }
 
-            }
+    public void rotate(int[] nums, int k){
+        k %= nums.length;
+        reverse(nums,0,nums.length - 1);
+        reverse(nums,0,k - 1);
+        reverse(nums,k,nums.length - 1);
+    }
+
+    public void reverse(int nums[] , int start , int end){
+
+        while(start < end){
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start ++;
+            end --;
+
         }
-            return res;
-        }
+    }
+
 }
