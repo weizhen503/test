@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.todo;
+package leetcode.大学算法训练营.line.done;
 
 public class DetectCycle142 {
     class ListNode {

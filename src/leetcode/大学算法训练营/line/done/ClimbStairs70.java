@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.todo;
+package leetcode.大学算法训练营.line.done;
 
 public class ClimbStairs70 {
     public int climbStairs(int n) {

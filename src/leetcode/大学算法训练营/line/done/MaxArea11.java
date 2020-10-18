@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.todo;
+package leetcode.大学算法训练营.line.done;
 
 /**
  * 资料：https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/jie-yu-shui

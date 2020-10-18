@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.todo;
+package leetcode.大学算法训练营.line.done;
 
 public class MoveZeros283 {
     public static void main(String[] args) {
