@@ -40,6 +40,8 @@ public boolean hasCycle(ListNode head) {
 
 189旋转数组问题
 三次反转
+特别要注意k与nums.length的关系
+当K > nums.length时 求余数 k%=nums.length   例如  当数组长度为5时，K为7，此时数组只要往右移动2次的结果与数组往右移动7次的结果相同  所以  要巧妙的运用余数
 
 15三数之和为0，并返回3个数字问题
 List<List<Integer>> res = new ArrayList<>();

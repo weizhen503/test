@@ -5,26 +5,20 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Solution {
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
-    public ListNode reverseList(ListNode head) {
-        ListNode node = head;
-        ListNode next = null;
-        ListNode pre = null;
-        while(node != null){
-            next = node.next;
-            node.next = pre;
-            pre = node;
-            node = next;
-        }
-        return pre;
+    public void rotate(int[] nums, int k){
+        reverse(nums,0,nums.length - 1);
+        reverse(nums,0,k - 1);
+        reverse(nums,k,nums.length - 1);
     }
 
+    public void reverse(int []nums,int start,int end){
 
+        while(start < end){
+            int temp = nums[start];
+            start = end;
+            end = temp;
+            start ++;
+            end --;
+        }
+    }
 }
