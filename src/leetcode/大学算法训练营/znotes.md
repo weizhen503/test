@@ -8,7 +8,7 @@ public boolean hasCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head.next;
         while(slow != fast){
-            //这个if语句为什么要两次判断fast
+            //这个if语句为什么要两次判断fast   A: 因为快指针肯定比慢指针先到链表的末尾，如果快指针为空，或者快指针的下一个节点为空，说明链表没用环，直接返回false;
             if(fast == null || fast.next == null){
                 return false;
             }
@@ -18,7 +18,7 @@ public boolean hasCycle(ListNode head) {
         return true;
     }
   
-141判断一个链表是不是循环链表
+141判断一个链表是不是循环链表 (是不是有环)
 快慢双指针法  fast=fast.next.next slow=slow.next；
     
 142给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
