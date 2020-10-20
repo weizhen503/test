@@ -1,7 +1,7 @@
 package leetcode.大学算法训练营.line.todo;
 
 
-import leetcode.大学算法训练营.line.util.ListNode;
+import leetcode.大学算法训练营.util.ListNode;
 
 /**
  * @author: wzx

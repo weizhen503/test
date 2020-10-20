@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.util;
+package leetcode.大学算法训练营.util;
 
 public class ListNode {
 
