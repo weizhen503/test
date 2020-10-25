@@ -1,20 +1,56 @@
 package leetcode.大学算法训练营.line.todo;
 
 
-import leetcode.大学算法训练营.util.ListNode;
+import leetcode.大学算法训练营.line.util.ListNode;
 
-/**
- * 资料： 1. materials\fucking-algorithm-master\高频面试系列\k个一组反转链表
- * @author: wzx
- * @date:2020/10/19 7:49
- * @version:1.0
- */
+
 public class ReverseKGroup25 {
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
+
     public ListNode reverseKGroup(ListNode head, int k) {
-        return null;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode pre = dummy;
+        ListNode end = dummy;
+
+        while(end.next != null){
+            for (int  i = 0 ; i < k && end != null; i ++){
+                end = end.next;
+            }
+            if(end == null){
+                break;
+            }
+            ListNode next = end.next;
+            ListNode start = pre.next;
+            end.next = null;
+            pre.next = reverse(start);
+            start.next = next;
+            pre = start;
+            end = pre;
+        }
+        return dummy.next;
     }
 
-    public static void main(String[] args) {
 
+    public ListNode reverse(ListNode head){
+        ListNode pre = null;
+        ListNode cur = head;
+        while(cur != null){
+            ListNode next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
     }
+
 }
