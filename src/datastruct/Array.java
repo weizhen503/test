@@ -33,7 +33,6 @@ public class Array <E> {
         }
         data[size] = e;
         size ++;
-
         //或者可以用 add(size,e);
     }
 
