@@ -86,4 +86,6 @@ res.add(new ArrayList<Integer>(Arrays.asList(nums[k], nums[i], nums[j])));
 155最小栈
 用辅助栈解
 
-
+- 困难 84. 柱状图中最大的矩形
+暴力解法 遍历 找出所有  heights[right + 1]  >= currentheight  和   (left > 0 && heights[left - 1] >= currentheight) 
+最后找出满足条件最左和最右的下标   再计算面积即可。

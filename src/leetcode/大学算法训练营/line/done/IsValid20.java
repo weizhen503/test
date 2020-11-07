@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.todo;
+package leetcode.大学算法训练营.line.done;
 
 import java.util.Stack;
 
@@ -27,6 +27,6 @@ public class IsValid20 {
 
     public static void main(String[] args) {
         IsValid20 test = new IsValid20();
-        System.out.println(test.isValid("{[]}"));
+        System.out.println(test.isValid("1*{2+3*(4*(2-1)*(3+x)+5)-6}"));
     }
 }
