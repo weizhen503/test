@@ -1,7 +1,5 @@
 package leetcode.大学算法训练营.line.done;
 
-import leetcode.大学算法训练营.line.util.ListNode;
-
 /**
  * @author: wzx
  * @date:2020/10/19 7:48

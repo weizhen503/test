@@ -79,3 +79,13 @@ res.add(new ArrayList<Integer>(Arrays.asList(nums[k], nums[i], nums[j])));
 经过k此循环，end 到达末尾，记录待翻转链表的后继 next = end.next
 翻转链表，然后将三部分链表连接起来，然后重置 pre 和 end 指针，然后进入下一次循环
 特殊情况，当翻转部分长度不足 k 时，在定位 end 完成后，end==null，已经到达末尾，说明题目已完成，直接返回即可
+
+20题有效的括号
+用栈解
+
+155最小栈
+用辅助栈解
+
+- 困难 84. 柱状图中最大的矩形
+暴力解法 遍历 找出所有  heights[right + 1]  >= currentheight  和   (left > 0 && heights[left - 1] >= currentheight) 
+最后找出满足条件最左和最右的下标   再计算面积即可。

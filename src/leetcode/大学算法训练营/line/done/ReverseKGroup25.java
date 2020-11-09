@@ -1,8 +1,6 @@
 package leetcode.大学算法训练营.line.done;
 
 
-import leetcode.大学算法训练营.line.util.ListNode;
-
 
 public class ReverseKGroup25 {
     class ListNode {
