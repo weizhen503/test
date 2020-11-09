@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.line.done;
+package leetcode.大学算法训练营.stackqueue.done;
 
 import java.util.Stack;
 

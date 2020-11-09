@@ -1,6 +1,6 @@
-package leetcode.大学算法训练营.line.done;
+package leetcode.大学算法训练营.stackqueue.done;
 
-public class LargestRectangleArea {
+public class LargestRectangleArea84 {
     public int largestRectangleArea(int[] heights) {
         if(heights.length == 0){
             return 0;
