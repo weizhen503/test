@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.tree.todo;
+package leetcode.大学算法训练营.tree.done;
 
 import leetcode.大学算法训练营.util.Node;
 

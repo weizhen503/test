@@ -1,4 +1,4 @@
-package leetcode.大学算法训练营.hashtable.todo;
+package leetcode.大学算法训练营.hashtable.done;
 
 import java.util.HashMap;
 import java.util.Map;
