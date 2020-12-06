@@ -14,7 +14,7 @@ public class PreOrder144 {
 
     private void doPreOrder(List<Integer> list, TreeNode root) {
         if (root == null) return;
-        list.add(root.val);
+        //list.add(root.val);
         List<TreeNode> treeNodes = new ArrayList<>();
         treeNodes.add(root.left);
         treeNodes.add(root.right);

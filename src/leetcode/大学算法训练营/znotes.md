@@ -89,3 +89,15 @@ res.add(new ArrayList<Integer>(Arrays.asList(nums[k], nums[i], nums[j])));
 - 困难 84. 柱状图中最大的矩形
 暴力解法 遍历 找出所有  heights[right + 1]  >= currentheight  和   (left > 0 && heights[left - 1] >= currentheight) 
 最后找出满足条件最左和最右的下标   再计算面积即可。
+
+- 中等 22 括号生成
+回溯算法。
+递归的结束条件是）的个数大于（的个数&&（和）的个数都>传入的实参n
+结果存入条件：当（的个数等于）的个数&&（和）的个数等于n
+ public void huisuo(ArrayList<String> list, String strpath, int leftnum, int rightnum, int n)
+ 
+ 98验证二叉搜索树
+ public boolean isValidBST(TreeNode root) 
+ 写一个函数利用中序遍历将root里的节点值存入链表list里，（中序遍历出来的值是升序的）
+ 再写一个函数遍历list里面的值是不是升序排列的，如果是返回true
+ 否则返回false;
